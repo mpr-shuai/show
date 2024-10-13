@@ -1,0 +1,152 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">YourLogo</div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <img src="avatar.jpg" alt="我的头像" class="avatar">
+                    <h1>你好, 我是<span class="highlight">[你的名字]</span></h1>
+                    <p class="typewriter">一位热爱<span id="changing-text"></span>的[你的职业]</p>
+                    <a href="#contact" class="cta-button">联系我</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 data-aos="fade-up">关于我</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p>这里是您的个人介绍。描述您的背景、经历、擅长的领域等。</p>
+                        <p>您可以添加更多段落来详细介绍自己。</p>
+                    </div>
+                    <div class="skills" data-aos="fade-left">
+                        <h3>技能</h3>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fab fa-react"></i> React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2 data-aos="fade-up">作品集</h2>
+                <div class="portfolio-filter" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="web">网页设计</button>
+                    <button class="filter-btn" data-filter="app">应用开发</button>
+                    <button class="filter-btn" data-filter="other">其他项目</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web" data-aos="zoom-in">
+                        <img src="project1.jpg" alt="项目1">
+                        <div class="portfolio-info">
+                            <h3>项目1</h3>
+                            <p>项目1的简短描述</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app" data-aos="zoom-in">
+                        <img src="project2.jpg" alt="项目2">
+                        <div class="portfolio-info">
+                            <h3>项目2</h3>
+                            <p>项目2的简短描述</p>
+                        </div>
+                    </div>
+                    <!-- 添加更多项目 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2 data-aos="fade-up">博客</h2>
+                <div class="blog-slider" data-aos="fade-up">
+                    <div class="blog-post">
+                        <img src="blog1.jpg" alt="博客文章1">
+                        <div class="blog-content">
+                            <h3>博客文章标题1</h3>
+                            <p class="date">2023年4月1日</p>
+                            <p>这里是博客文章1的简短介绍...</p>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="blog-post">
+                        <img src="blog2.jpg" alt="博客文章2">
+                        <div class="blog-content">
+                            <h3>博客文章标题2</h3>
+                            <p class="date">2023年3月15日</p>
+                            <p>这里是博客文章2的简短介绍...</p>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                    <!-- 添加更多博客文章 -->
+                </div>
+                <div class="blog-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 data-aos="fade-up">联系我</h2>
+                <form data-aos="fade-up">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="您的邮箱" required>
+                    <textarea placeholder="您的留言" required></textarea>
+                    <button type="submit" class="submit-btn">发送</button>
+                </form>
+                <div class="social-links" data-aos="fade-up">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 [您的名字]. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
